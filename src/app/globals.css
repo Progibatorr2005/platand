@@ -2,26 +2,164 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'DrukCyr';
+  src: url('./fonts/drukwidecyr-bold.ttf');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'DrukCyr2';
+  src: url('./fonts/DrukCyr-Super.woff');
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+h2{
+  font-size: 60px;
+  font-family: "DrukCyr";
+  margin-bottom: 45px;
+  padding-top: 50px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h3{
+  font-size: 27px;
+  font-family: "DrukCyr";
+}
+
+body{
+  font-family: "DrukCyr";
+}
+  
+main{
+  overflow: hidden;
+}
+
+
+header{
+  font-size: 15px;
+  width: 100%;
+  background-color: #111111;
+  padding: 9px 0;
+  display: block;
+  position: sticky;
+  top: 0;
+  
+}
+
+.header_container{
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  align-items: center;
+  margin: 0 auto
+
+}
+
+.button_main{
+  background-color: #FFC64F;
+  border-radius: 100px;
+  height: 32px;
+  padding: 9px 32px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+} 
+
+
+.preview{
+  background-image: url(/image/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+
+}
+
+
+.headliners{
+  background-color: #FFC64F;
+}
+
+.container{
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+.headliners_card{
+  text-align: center;
+  align-items: center;
+}
+
+.headliners_card p{
+  font-family: "DrukCyr2";
+  font-size: 50px;
+  color: #F7F7F7;
+  z-index: 1000;
+  margin-top: -40px;
+}
+
+
+.headliners_container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.artist_card p{
+  font-family: "DrukCyr2";
+  font-size: 30px;
+  color: #F7F7F7;
+  margin-top: -24px;
+  text-align: center;
+  align-items: center;
+}
+
+.container2{
+  width: 100vh;
+}
+
+.info_container{
+  display: flex;
+
+}
+
+.map_block{
+  background-image: url(/image/map.png);
+  background-size: cover;
+  min-height: 800px;
+  font-size: 20px;
+}
+
+.tickets{
+  background-color: #FFC64F;
+}
+
+
+.product_card{
+  padding: 7px;
+  width: 645px;
+  margin-top: 20px;
+  height: 182px;
+  border-radius: 15px;
+  background-color: #FFFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_card_left{
+  text-align: center;
+}
+
+.product_card_line{
+  height: 182px;
+  border-left: 2px dotted #C4C4C4;
+}
+
+
+.product_card_right{
+  text-align: center;
+}
+
+
+.route{
+  background-color: #1F1F1F;
+  padding-bottom: 50px;
 }
